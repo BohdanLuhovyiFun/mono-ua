@@ -1,0 +1,71 @@
+<header>
+    <div class="header-inner">
+        <!-- <div class="header-logo"></div> -->
+        <div class="product-list">
+            <div class="header-logo" [routerLink]="[ '/' ]" routerLinkActive="route-active"></div>
+            <ul class="product-items">
+                <li class="item border" [routerLink]="[ '/actions' ]" routerLinkActive="route-active">
+                    <img class="actions-icon" src="https://monosushi.com.ua/wp-content/uploads/2020/10/nav-img-gift.svg"
+                        alt="">
+                    <p>Акції</p>
+                </li>
+                <li class="item" [routerLink]="[ '/product-category/rolls' ]" routerLinkActive="route-active">
+                    <img class="actions-icon"
+                        src="https://monosushi.com.ua/wp-content/uploads/2020/10/nav-img-rolls.svg" alt="">
+                    <p>Роли</p>
+                </li>
+                <li class="item" [routerLink]="[ '/product-category/sets' ]" routerLinkActive="route-active">
+                    <img class="actions-icon" src="https://monosushi.com.ua/wp-content/uploads/2020/10/nav-img-sets.svg"
+                        alt="">
+                    <p>Сети</p>
+                </li>
+                <li class="item" [routerLink]="[ '/product-category/drinks' ]" routerLinkActive="route-active">
+                    <img class="actions-icon"
+                        src="https://monosushi.com.ua/wp-content/uploads/2020/10/nav-img-drinks.svg" alt="">
+                    <p>Напої</p>
+                </li>
+                <li class="item" [routerLink]="[ '/product-category/rolls' ]" routerLinkActive="route-souses">
+                    <img class="actions-icon" src="https://monosushi.com.ua/wp-content/uploads/2021/09/icon.svg" alt="">
+                    <p>Соуси</p>
+                </li>
+                <!-- DROPDOWN -->
+                <li class="item">
+                    <div class="dropdown">
+                        <button class="dropbtn"></button>
+                        <div class="dropdown-content">
+                          <a [routerLink]="[ '/dostavka-ta-oplata' ]" routerLinkActive="route-active">Доставка та оплата</a>
+                          <a [routerLink]="[ '/about-us' ]" routerLinkActive="route-active">Про нас</a>
+                          <a [routerLink]="[ '/actions' ]" routerLinkActive="route-active">Акції</a>
+                        </div>
+                      </div>
+                </li>
+            </ul>
+        </div>
+        <!-- Contact & Admin -->
+        <div class="contact-list">
+            <button type="button" class="btn-open-popup"></button>
+            <div class="call-and-graphic">
+                <div class="call-us">
+                    <a class="call-phone" href="tel:0684896156">(097) 878 08 37</a>
+                </div>
+                <div class="graphic">
+                    Працюємо з <b>11:00</b> до <b>23:00</b>
+                </div>
+            </div>
+            <button type="button" class="btn-open-admin" [routerLink]="[ '/admin' ]"
+                routerLinkActive="route-active"></button>
+            <div class="header-basket">
+                <div class="basket-price">
+                    <b id="basket-total-price" class="basket-total-price">0</b>
+                    <span>грн</span>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="header-basket">
+            <div class="basket-price">
+                <b id="basket-total-price" class="basket-total-price">73</b>
+                <span>грн</span>
+            </div>
+        </div> -->
+    </div>
+</header>

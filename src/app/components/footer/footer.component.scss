@@ -1,0 +1,158 @@
+@import '/src/app/shared/styles/variables';
+
+// footer{
+//     width: 100%;
+// }
+
+.footer-inner{
+    width: 100%;
+    height: 156px;
+
+    border-top: 4px solid $primary;
+    // border-bottom: 1px solid $heads;
+
+
+    font-size: 16px;
+}
+
+.footer-top{
+    width: 100%;
+    height: 90px;
+    // background-color: aquamarine;
+    margin-top: 20px;
+    padding: 0px 15px;
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.logo{
+    width: 125px;
+    height: 47px;
+    background-image: url('https://monosushi.com.ua/wp-content/uploads/2021/06/logo.svg');
+    background-size: 125px 47px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.a-p-o{
+    width: 25%;
+    height: 27px;
+    // background-color: burlywood;
+    margin-top: 1%;
+    margin-left: 15%;
+    
+}
+
+.a-p-o a{
+    margin-right: 15%;
+    text-decoration: none;
+    color: $heads;
+}
+
+.footer-info{
+    width: 600px;
+    height: 70px;
+
+    display: flex;
+
+    // background-color: burlywood;
+}
+
+.s-delivery-address{
+    width: 42%;
+    text-align: center;
+
+    margin-right: 2%;
+}
+
+.s-delivery{
+    list-style: none;
+    color: gray;
+}
+
+.order-phone{
+    text-align: center;
+    width: 42%;
+}
+
+.order-phone a {
+    text-decoration: none;
+    color: $heads;
+}
+
+.work-time{
+    width: 42%;
+    text-align: center;
+}
+
+.footer-bottom{
+    width: 100%;
+    height: 40px;
+
+    align-items: center;
+
+    // background-color: aquamarine;
+    display: flex;
+
+    padding: 0px 15px;
+    justify-content: space-between;
+}
+
+.copyright{
+    width: 150px;
+    height: 27px;
+
+    color: gray;
+}
+
+.copyright p {
+    width: 100%;
+}
+
+.pay-cards{
+    width: 151px;
+    height: 27px;
+    // background-color: burlywood;
+    margin-top: 1%;
+    margin-left: 15%;
+    display: flex;
+
+    align-items: center;
+
+    // background-color: burlywood;
+}
+
+.pay-card-item{
+    margin-right: 10%;
+}
+
+.social{
+    width: 20%;
+    height: 40px;
+    margin-top: 1%;
+    margin-left: 15%;
+    // background-color: blue;
+
+    display: flex;
+}
+
+.social ul{
+    list-style: none;
+    display: flex;
+}
+
+.social span{
+    margin-right: 5%;
+}
+
+.icon-item{
+    width: 24px;
+    height: 24px;
+
+    // background-color: $primary;
+    border-radius: 8px;
+
+    // justify-content: center;
+}

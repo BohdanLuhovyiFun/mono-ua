@@ -1,0 +1,121 @@
+@import '/src/app/shared/styles/variables';
+
+
+.actions-block{
+    width: 100%;
+    height: fit-content;
+    margin-top: 60px;
+    margin: 60 auto 5 auto;
+    border: 1px transparent solid;
+}
+
+.actions-head{
+    width: 12%;
+    height: 100px;
+    margin: 50px auto 20px auto;
+    color: $heads;
+    font-size: 42px;
+    line-height: 1.2em;
+    font-weight: bold;
+    border-top: 5px $primary solid;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.all-actions{
+    width: 85%;
+    min-height: 500px;
+
+    margin: 0 auto;
+
+
+    // background-color: brown;
+
+    display: flex;
+    
+    flex-wrap: wrap;
+}
+
+.action{
+    width: 50%;
+    height: 400px;
+
+    margin-bottom: 3%;
+    // background-color: fuchsia;
+}
+
+.action-img{
+    width: 95%;
+    height: 70%;
+    // background-color: bisque;
+    background-color: $primary;
+
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.action-img img{
+    // width: 95%;
+    // height: 95%;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+
+    border: none;
+
+    // transition: all 0.6s ease;
+
+   
+}
+
+.action-img:hover{
+    width: 100%;
+    height: 75%;
+
+    transition: 0.3s;
+}
+
+hr{
+    width: 90%;
+    color: $primary;
+    margin: 8% auto 2% auto;
+
+    border-style: solid;
+    border-width: 2px;
+}
+
+.forBtn{
+    width: 40%;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.bilshe-action-btn{
+    width: 100%;
+    height: 50px;
+    color: black;
+    background-color: $primary;
+    border: 2px solid transparent;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.7s ease;
+
+}
+
+.bilshe-action-btn:hover{
+    background-color: transparent;
+    border: 2px solid $primary;
+    transition: 0.7s;
+}

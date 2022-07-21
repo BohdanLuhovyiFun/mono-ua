@@ -1,0 +1,122 @@
+<div class="aboutus-block">
+    <div class="aboutus-head">
+        Про нас
+    </div>
+
+    <div class="main">
+        <p class="about-title">
+            <strong>Monosushi –</strong><strong> доставка неймовірно смачних суші у Львові</strong><strong>.</strong>
+        </p>
+        <p class="under-title-text">
+            Головний пріоритет – висока якість їжі та сервісу. Ми – команда професіоналів, яка щодня працює для<br>
+            Вас. Якість та Швидкість! – це два основних пріоритети в роботі команди. В першу чергу звичайно ж<br>
+            Якість. Суші готуються без затримок, одразу ж після Вашого замовлення. А завдяки сучасним технологіям та<br>
+            відповідальному навчанню працівників, свіжі страви можливо доставляти до 59 хв в 75% замовлень.
+        </p>
+        <ul class="ul-items">
+            <li class="item">
+                висока якість їжі та сервісу
+            </li>
+            <li class="item">
+                команда професіоналів
+            </li>
+            <li class="item">
+                сучасні технології приготування
+            </li>
+        </ul>
+
+        <div class="hello-block">
+            <div class="photo-hello"></div>
+
+            <div class="text-hello">
+                <p class="hello-title">
+                    Привіт! Познайомимось?
+                </p>
+                <p class="hello-description">
+                    Monosushi – це доставка найсмачніших суші у Львові, яка була створена командою перфекціоністів. Двоє друзів, які обожнюють роли вирішили створити продукт, якого їм не вистачало на ринку Львова. Продукт, в якому ідеальним буде все: смак, упакування, сервіс і все це за лояльною ціною!
+                </p>
+            </div>
+        </div>
+
+        <div class="under-hello-block">
+            <div class="text-under-hello">
+                <p class="under-hello-title">
+                    Наш пріоритет - ваша посмішка від задоволення
+                </p>
+                <p class="under-hello-description">
+                    <b>Monosushi – </b>це доставка найсмачніших суші у Львові, яка була створена командою перфекціоністів. Двоє друзів, які обожнюють роли вирішили створити продукт, якого їм не вистачало на ринку Львова. Продукт, в якому ідеальним буде все: смак, упакування, сервіс і все це за лояльною ціною!
+                </p>
+            </div>
+            <div class="photo-under-hello"></div>
+        </div>
+
+        <div class="perevagi">
+            <div class="perevagi-title">
+                Наші переваги
+            </div>
+
+            <div class="perevagi-items">
+                <div class="item-p">
+                    <div class="photo-p photo1"></div>
+                    <div class="p-into-title">
+                        Свіжі продукти
+                    </div>
+                    <div class="p-into-text">
+                        Наші інгредієнти ще вчора плавали у морі, а сьогодні вже у Ваших сушиках
+                    </div>
+                </div>
+
+                <div class="item-p">
+                    <div class="photo-p photo2"></div>
+                    <div class="p-into-title">
+                        Неймовірний смак
+                    </div>
+                    <div class="p-into-text">
+                        Ми створили сушики, які змусять Ваші рецептори вибухнути від насолоди
+                    </div>
+                </div>
+
+                <div class="item-p">
+                    <div class="photo-p photo3"></div>
+                    <div class="p-into-title">
+                        Великі порції
+                    </div>
+                    <div class="p-into-text">
+                        Ми віднайшли ідеальні порції ролів та завжди дотримуємось грамажу вказаного на сайті
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popular-questions">
+            <div class="popular-title">
+                Популярні запитання
+            </div>
+
+            <button class="accordion" (click)="accordion1()">Як можна замовити, якщо наша адреса не входить у вашу зону доставки?</button>
+            <div class="panel" [hidden]="panelHidden1">
+            <p style="border-radius: 10px; color: #5a5a5a;">
+                Якщо ваша адреса знаходиться поза межами нашої зони доставки, ви можете:
+                Забрати замовлення самовивозом за однією з наших адрес. (В такому випадку ви отримаєте “Запечені моно макі з лососем у подарунок).
+                Дізнатись в оператора чи є можливість зробити виключення для доставки поза межі зони в даний момент часу.
+            </p>
+            </div>
+
+            <button class="accordion" (click)="accordion2()">Скільки часу очікувати на замовлення?</button>
+            <div class="panel" [hidden]="panelHidden2">
+            <p style="border-radius: 10px; color: #5a5a5a;">
+                Час доставки залежить від адреси замовлення.
+                Доставка в зелену зону – до 1 год.
+                Доставка в жовту зону – до 1,5 год.
+            </p>
+            </div>
+
+            <button class="accordion" (click)="accordion3()">Доставка безкоштовна?</button>
+            <div class="panel" [hidden]="panelHidden3">
+            <p style="border-radius: 10px; color: #5a5a5a;">
+                Так, доставка безкоштовна при мінімальній сумі замовлення 200 грн в зелену зону доставки та 300 грн в жовту зону.
+            </p>
+            </div>
+        </div>
+    </div>
+</div>

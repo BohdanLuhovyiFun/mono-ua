@@ -1,0 +1,61 @@
+@import '/src/app/shared/styles/variables';
+
+
+.actions-info-block{
+    width: 100%;
+    height: fit-content;
+    margin-top: 95px;
+    margin: 95 auto 5 auto;
+    border: 1px transparent solid;
+}
+
+.actions-info{
+    width: 60%;
+    height: fit-content;
+
+    // background-color: bisque;
+
+    margin: 7% auto;
+}
+
+.block-title{
+    width: 80%;
+    height: 180px;
+
+    background-color: $primary;
+    border-radius: 10px;
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    font-size: 42px;
+    color: $heads;
+
+    margin: 0 auto 5% auto;
+}
+
+.block-title p{
+    width: fit-content;
+    height: 43px;
+    border-top: 7px solid $heads;
+    border-radius: 6px;
+}
+
+.block-description{
+    width: 100%;
+    height: 300px;
+
+    font-size: 18px;
+    font-weight: 100;
+    color: gray;
+    text-align: center;
+    margin: 0 auto;
+
+    outline-style: none;
+    border: none;
+    resize: none;
+
+    font-family: 'Balsamiq Sans'
+    // background-color: aqua;
+}

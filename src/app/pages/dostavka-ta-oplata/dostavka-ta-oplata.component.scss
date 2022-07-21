@@ -1,0 +1,333 @@
+@import '/src/app/shared/styles/variables';
+
+
+.delivery-block{
+    width: 100%;
+    height: fit-content;
+    margin-top: 60px;
+    margin: 60 auto 5 auto;
+    border: 1px transparent solid;
+}
+
+.delivery-head{
+    width: 33%;
+    height: 100px;
+    margin: 50px auto 20px auto;
+    color: $heads;
+    font-size: 42px;
+    line-height: 1.2em;
+    font-weight: bold;
+    border-top: 5px $primary solid;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.main{
+    width: 80%;
+    height: fit-content;
+
+    margin: 0 auto;
+
+    // background-color: brown;
+}
+
+.green-yellow{
+    width: 100%;
+    height: 250px;
+
+    display: flex;
+
+    // background-color: aqua;
+}
+
+.green{
+    width: 50%;
+    height: 100%;
+    // background-color: yellow;
+    display: flex;
+}
+
+.yellow{
+    width: 50%;
+    height: 100%;
+    // background-color: green;
+    display: flex;
+}
+
+.green-img{
+    width: 50%;
+    height: 100%;
+
+    background-image: url('https://monosushi.com.ua/wp-content/uploads/2020/10/mn-delivery-img.svg');
+    background-size: 220px 144px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    // background-color: cadetblue;
+
+}
+
+.green-text{
+    width: 50%;
+    height: 100%;
+    // text-align: center;
+}
+
+.green-title{
+    width: fit-content;
+    height: fit-content;
+
+    // background-color: aqua;
+
+    color: #27ae60;
+    font-weight: bolder;
+    font-size: 26px;
+
+    margin: 30px auto 20px auto;
+}
+
+.yellow-img{
+    width: 50%;
+    height: 100%;
+
+    background-image: url('https://monosushi.com.ua/wp-content/uploads/2020/10/mn-delivery-img.svg');
+    background-size: 220px 144px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    // background-color: cadetblue;
+}
+
+.yellow-text{
+    width: 50%;
+    height: 100%;
+}
+
+.yellow-title{
+    width: fit-content;
+    height: fit-content;
+
+    // background-color: aqua;
+
+    color: #f2c94c;
+    font-weight: bolder;
+    font-size: 26px;
+
+    margin: 30px auto 20px auto;
+}
+
+
+.first-under-title-g{
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+
+    font-style: 16px;
+    color: #5A5A5A;
+
+    margin-bottom: 20px;
+}
+
+.first-under-title-g span{
+    color: #27ae60;
+    font-weight: bolder;
+}
+
+
+.first-under-title-y{
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+
+    font-style: 16px;
+    color: #5A5A5A;
+    margin-bottom: 20px;
+}
+
+.first-under-title-y span{
+    color: #f2c94c;
+    font-weight: bolder;
+}
+
+.second-under-title-g{
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+
+    font-style: 16px;
+    color: #5A5A5A;
+}
+
+.second-under-title-g span{
+    color: #27ae60;
+    font-weight: bolder;
+}
+
+.second-under-title-y{
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+
+    font-style: 16px;
+    color: #5A5A5A;
+}
+
+.second-under-title-y span{
+    color: #f2c94c;
+    font-weight: bolder;
+}
+
+.map{
+    width: 80%;
+    height: 500px;
+
+    // background-color: #27ae60;
+
+    margin: 0 auto;
+    cursor: e-resize;
+    background-image: url('../../map-img/map.jpg');
+}
+
+.text-under-map{
+    width: 70%;
+    height: fit-content;
+    font-size: 18px;
+    color: #5A5A5A;
+    margin: 4% auto 4% auto;
+}
+
+.first-under-map{
+    margin-bottom: 4%;
+}
+
+.oplata{
+    width: 70%;
+    height: fit-content;
+
+    margin: 0 auto 4% auto;
+}
+
+.oplata-title{
+    width: 100%;
+    text-align: center;
+    font-size: 42px;
+    color: #252525;
+    font-weight: bold;
+    margin-bottom: 4%;
+}
+
+.sposobi{
+    width: 90%;
+    height: 130px;
+
+    margin: 0 auto 4% auto;
+    display: flex;
+
+    // background-color: #f2c94c;
+}
+
+.left-s{
+    width: 50%;
+    height: 100%;
+    // background-color: aqua;
+    display: flex;
+}
+
+.right-s{
+    width: 50%;
+    height: 100%;
+    // background-color: #5A5A5A;
+    display: flex;
+}
+
+.photo-l-s{
+    width: 20%;
+    height: 100%;
+
+    // background-color: #27ae60;
+}
+
+.photo-r-s{
+    width: 20%;
+    height: 100%;
+
+    // background-color: #27ae60;
+}
+
+.photo-l{
+    width: 100%;
+    height: 40%;
+    border-radius: 10px;
+    background-image: url('https://monosushi.com.ua/wp-content/uploads/2020/11/pay-info-img-3.svg');
+    background-size: 43px 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $primary;
+}
+
+.photo-r{
+    width: 100%;
+    height: 40%;
+    border-radius: 10px;
+    background-image: url('https://monosushi.com.ua/wp-content/uploads/2020/11/pay-info-img-1.svg');
+    background-size: 43px 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $primary;
+}
+
+.right-l-s{
+    width: 80%;
+    height: 100%;
+}
+
+.right-r-s{
+    width: 80%;
+    height: 100%;
+}
+
+.oplata-got{
+    width: fit-content;
+    height: fit-content;
+    font-size: 20px;
+    font-weight: bolder;
+
+    margin-bottom: 10%;
+    margin-left: 2%;
+}
+
+.bezgot{
+    width: fit-content;
+    height: fit-content;
+    font-size: 20px;
+    font-weight: bolder;
+
+    margin-bottom: 10%;
+    margin-left: 2%;
+}
+
+.secondary-got{
+    width: fit-content;
+    height: fit-content;
+    font-style: 14px;
+    color: #5A5A5A;
+    margin-left: 2%;
+}
+
+.secondary-bezgot{
+    width: fit-content;
+    height: fit-content;
+    font-style: 14px;
+    color: #5A5A5A;
+    margin-left: 2%;
+}
+
+.end-text{
+    width: 90%;
+    height: fit-content;
+
+    font-size: 18px;
+    color: #5A5A5A;
+
+    margin: 0 auto 4% auto;
+}

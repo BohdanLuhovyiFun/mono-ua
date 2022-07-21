@@ -1,0 +1,308 @@
+@import '/src/app/shared/styles/variables';
+
+
+.aboutus-block{
+    width: 100%;
+    height: fit-content;
+    margin-top: 60px;
+    margin: 60 auto 5 auto;
+    border: 1px transparent solid;
+}
+
+.aboutus-head{
+    width: 20%;
+    height: 100px;
+    margin: 50px auto 20px auto;
+    color: $heads;
+    font-size: 42px;
+    line-height: 1.2em;
+    font-weight: bold;
+    border-top: 5px $primary solid;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.main{
+    width: 60%;
+    height: fit-content;
+
+    margin: 0 auto;
+
+    // background-color: brown;
+}
+
+.about-title{
+    width: 100%;
+    font-size: 35px;
+    height: fit-content;
+    text-align: left;
+    color: $heads;
+
+
+    margin-bottom: 4%;
+}
+
+.under-title-text{
+    width: 95%;
+    height: fit-content;
+    text-align: left;
+    font-style: 16px;
+    color: #5A5A5A;
+
+    margin: 0 auto 4% auto;
+}
+
+.ul-items{
+    width: 90%;
+    height: fit-content;
+    list-style-type: disc;
+
+    text-align: left;
+    font-style: 16px;
+    color: #5A5A5A;
+
+    margin: 0 auto 4% auto;
+    // background-color: aqua;
+}
+
+.hello-block{
+    width: 100%;
+    height: 395px;
+
+    display: flex;
+
+    margin-bottom: 5%;
+}
+
+.photo-hello{
+    width: 50%;
+    height: 100%;
+
+    background-image: url('https://monosushi.com.ua/wp-content/uploads/2022/07/img_1127-scaled-568x568.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border-radius: 10px;
+
+    // background-color: aqua;
+}
+
+.text-hello{
+    width: 50%;
+    height: 100%;
+
+
+    // background-color: burlywood;
+}
+
+.hello-title{
+    width: 80%;
+    height: fit-content;
+    font-size: 35px;
+    text-align: left;
+    font-weight: bolder;
+    color: $heads;
+
+
+    margin: 60px auto 50px auto;
+}
+
+.hello-description{
+    width: 80%;
+    height: fit-content;
+    text-align: left;
+    font-size: 16px;
+    color: #5A5A5A;
+
+    margin: 0 auto 4% auto;
+}
+
+.under-hello-block{
+    width: 100%;
+    height: 395px;
+
+    display: flex;
+
+    margin-bottom: 7%;
+}
+
+.photo-under-hello{
+    width: 50%;
+    height: 100%;
+
+    background-image: url('https://monosushi.com.ua/wp-content/uploads/2022/07/img_8051-scaled-568x568.jpeg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border-radius: 10px;
+
+    // background-color: aqua;
+}
+
+.text-under-hello{
+    width: 50%;
+    height: 100%;
+
+
+    // background-color: burlywood;
+}
+
+.under-hello-title{
+    width: 80%;
+    height: fit-content;
+    font-size: 35px;
+    text-align: left;
+    font-weight: bolder;
+    color: $heads;
+
+
+    margin: 60px auto 40px auto;
+}
+
+.under-hello-description{
+    width: 80%;
+    height: fit-content;
+    text-align: left;
+    font-size: 16px;
+    color: #5A5A5A;
+
+    margin: 0 auto 4% auto;
+}
+
+.perevagi{
+    width: 95%;
+    height: fit-content;
+
+
+    margin: 0 auto 5% auto;
+
+    // background-color: burlywood;
+}
+
+.perevagi-title{
+    width: 100%;
+    text-align: center;
+    font-size: 42px;
+    color: #252525;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+
+.perevagi-items{
+    width: 100%;
+    height: 220px;
+
+    display: flex;
+
+    // background-color: aqua;
+}
+
+.item-p{
+    width: (calc(100%/3));
+    height: 100%;
+
+
+    // border: 1px black solid;
+}
+
+.photo-p{
+    width: 85px;
+    height: 85px;
+    background-color: $primary;
+    border-radius: 10px;
+
+    
+
+    margin: 5% auto 3% auto;
+}
+
+.photo1{
+    background-image: url('https://monosushi.com.ua/wp-content/uploads/2020/10/advantages-img-1.svg');
+    background-size: 53px 54px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.photo2{
+    background-image: url('https://monosushi.com.ua/wp-content/uploads/2020/10/advantages-img-2.svg');
+    background-size: 53px 54px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.photo3{
+    background-image: url('https://monosushi.com.ua/wp-content/uploads/2020/10/advantages-img-3.svg');
+    background-size: 53px 54px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.p-into-title{
+    width: fit-content;
+    height: fit-content;
+
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    margin: 0 auto 3% auto;
+}
+
+.p-into-text{
+    width: fit-content;
+    height: fit-content;
+
+    font-style: 14px;
+    text-align: center;
+    margin: 0 auto;
+    color: #5A5A5A;
+}
+
+.popular-questions{
+    width: 95%;
+    height: fit-content;
+
+
+    margin: 0 auto 5% auto;
+
+    // background-color: burlywood;
+}
+
+.popular-title{
+    width: 100%;
+    text-align: center;
+    font-size: 42px;
+    color: #252525;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    // display: none;
+    overflow: hidden;
+    margin-bottom: 4%;
+  }

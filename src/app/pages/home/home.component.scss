@@ -1,0 +1,137 @@
+@import '/src/app/shared/styles/variables';
+
+.home-block{
+    width: 100%;
+    height: fit-content;
+    margin-top: 60px;
+    margin: 60 auto;
+}
+
+.banner{
+    width: 100%;
+    height: 450px; 
+    margin: 60 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('https://monosushi.com.ua/wp-content/uploads/2020/10/banner-img-1-1920x650.jpg');
+
+    cursor: col-resize;
+}
+
+.info-banner{
+    width: 90%;
+    height: 70%;
+
+    // background-color: aquamarine;
+
+}
+
+.text-info-banner{
+    width: 63%;
+    // font-size: 47px;
+    font-size: 294%;
+    color: white;
+}
+
+.text-info-banner b {
+    color: $primary;
+}
+
+.text-under-info-banner{
+    width: 55%;
+    color: #ffffff8c;
+    font-size: 20px;
+    margin-top: 27px;
+    margin-bottom: 27px;
+}
+
+
+.detalnisheBtn{
+    width: 188px;
+    height: 56px;
+    color: black;
+    background-color: $primary;
+    border: 2px solid transparent;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.detalnisheBtn:hover{
+    background-color: transparent;
+    border: 2px solid $primary;
+    color: white;
+    transition: 1s;
+}
+
+.after-banner{
+    width: 100%;
+    height: 175px;
+    background-color: $primary;
+    display: flex;
+}
+
+.after-banner-item{
+    width: calc(100% / 3);
+    height: 100%;
+
+    border-left: 1px white solid;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    // background-color: blueviolet;
+}
+
+.border-left-none{
+    border-left: none;
+}
+
+.elem-into{
+    width: 75%;
+    height: 50%;
+
+    display: flex;
+    align-items: center;
+
+    // background-color: burlywood;
+}
+
+.elem-into img {
+    width: 40%;
+    height: 100%;
+}
+
+.zonyDostavki{
+    width: 50%;
+    height: 55%;
+    color: black;
+    background-color: white;
+    border: 2px solid transparent;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.zonyDostavki:hover{
+    background-color: transparent;
+    border: 2px solid white;
+    transition: 1s;
+}
+
+.after-banner-info{
+    text-align: center;
+    width: 55%;
+    height: 50%;
+}

@@ -1,0 +1,30 @@
+<div class="actions-block">
+    <div class="actions-head">
+        Акції
+    </div>
+
+    <div class="all-actions">
+        <!-- <div class="action">
+            <div class="action-img">
+                <img src="https://monosushi.com.ua/wp-content/uploads/2022/07/rol-tyzhnya-3.0_page-0001-1-scaled-697x379.jpg" alt="img">
+            </div>
+
+            <hr>
+
+            <div class="forBtn">
+                <button type="button" class="bilshe-action-btn">ДІЗНАТИСЬ БІЛЬШЕ</button>
+            </div>
+        </div> -->
+        <div class="action" *ngFor="let action of userActions">
+            <div class="action-img" [routerLink]="[ '/actions', action.id ]">
+                <img [src]="action.imagePath" alt="img">
+            </div>
+
+            <hr>
+
+            <div class="forBtn">
+                <button type="button" class="bilshe-action-btn" [routerLink]="[ '/actions', action.id ]">ДІЗНАТИСЬ БІЛЬШЕ</button>
+            </div>
+        </div>
+    </div>
+</div>

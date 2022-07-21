@@ -1,0 +1,63 @@
+<div class="container">
+    <div class="button">
+        <button type="button" class="addButton" (click)="openFormCheck()">ДОДАТИ КАТЕГОРІЮ</button>
+    </div>
+
+    
+    <div class="forForm" [hidden]="!openForm">
+        <form [formGroup]="categoryForm" (ngSubmit)="addCategory()">
+            <input name="name" formControlName="name" type="text" class="input"  id="name" placeholder="*name">
+            <input name="path" formControlName="path" type="text" class="input" id="path" placeholder="*path">
+            <ng-container *ngIf="!isUploaded">
+                <input class="formFile" type="file" id="formFile" (change)="upload($event)" >
+                <p>{{ uploadPercent }}</p>
+            </ng-container>
+            
+            <ng-container *ngIf="isUploaded">
+                <img class="imgAdd" [src]="valueByControl('imagePath')" alt="">
+                <button type="button" class="btn-danger" (click)="deleteImage()">delete</button>
+            </ng-container>
+            
+            <div class="buttons">
+                <button [disabled]="categoryForm.invalid" type="submit" class="addAction">{{ editStatus ? 'ЗБЕРЕГТИ' : 'ДОБАВИТИ' }}</button>
+                <button type="button"  (click)="closeForm()">закрити</button>
+            </div>
+        </form>            
+    </div>
+
+    <table [hidden]="openForm">
+        <thead>
+            <tr>
+                <td>
+                    #
+                </td>
+                <td>
+                    Назва
+                </td>
+                <td>
+                    Шлях
+                </td>
+                <td>
+                    Картинка
+                </td>
+                <td>
+                    Дії
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr  *ngFor="let category of adminCategories">
+                <td>{{ category.id}}</td>
+                <td>{{ category.name }}</td>
+                <td>{{ category.path }}</td>
+                <td>
+                    <img [src]="category.imagePath" alt="" height="50px">
+                </td>
+                <td>
+                    <button type="button" style="width: 60%;" (click)="editCategory(category)">Реагувати</button>
+                    <button [disabled]="editStatus" type="button" style="width: 60%;" (click)="deleteCategory(category)">Видалити</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,76 @@
+@import '/src/app/shared/styles/variables';
+
+
+.admin-block{
+    width: 100%;
+    height: fit-content;
+    margin-top: 60px;
+    margin: 60 auto 5 auto;
+    border: 1px transparent solid;
+}
+
+.admin-head{
+    width: 12%;
+    height: 100px;
+    margin: 50px auto 20px auto;
+    color: $heads;
+    font-size: 42px;
+    line-height: 1.2em;
+    font-weight: bold;
+    border-top: 5px $primary solid;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.admin-container{
+    width: 100%;
+    height: 600px;
+
+    // background-color: burlywood;
+
+    display: flex;
+}
+
+.menu{
+    width: 15%;
+    height: 100%;
+
+    margin-left: 1%;
+
+    // background-color: aquamarine;
+}
+
+.admin-menu-button{
+    width: 95%;
+    height: 80px;
+    font-size: 20px;
+    line-height: 1.2em;
+    font-weight: bold;
+    font-family: 'Balsamiq Sans';
+    
+    border-top: 4px transparent solid;
+
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+
+    margin-top: 2%;
+
+    cursor: pointer;
+}
+
+.button-table{
+    width: 85%;
+    height: fit-content;
+
+    // background-color: brown;
+}
+
+.admin-menu-active{
+    border-top: 6px $primary solid;
+    border-radius: 6px;
+}
+
+.exit{
+    border-top: 4px transparent solid;
+}

@@ -1,0 +1,338 @@
+@import '/src/app/shared/styles/variables';
+
+
+
+// @media screen and (min-width: 320px) and (max-width: 375px){
+
+// @media screen and (max-width: 1199px){
+//     .header{
+//         width: 100%;
+//         height: 60px;
+//     }
+
+//     .header-inner-phone{
+//         width: 100%;
+//         // border: 1px black solid;
+//         display: flex;
+//     }
+
+//     .adap {
+//         text-align: center;
+//     }
+
+//     .header-logo-phone{
+//         width: 70px;
+//         height: 60px;
+
+//         background-color: $primary;
+//         background-image: url('https://monosushi.com.ua/wp-content/uploads/2021/08/logo-mobile.svg');
+//         background-size: 40px 40px;
+//         background-repeat: no-repeat;
+//         background-position: center;
+//     }
+
+//     .header-basket-phone{
+//         width: 70px;
+//         height: 60px;
+
+//         background-color: $primary;
+//         background-image: url('https://monosushi.com.ua/wp-content/themes/monosushi/img/basket.svg');
+//         background-size: 30px 30px;
+//         background-repeat: no-repeat;
+//         background-position: center;
+//     }
+
+    
+
+// }
+
+
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    width: 100%;
+    height: 95px;
+    background-color: white;
+    // display: flex;
+    // justify-content: space-between;
+}
+
+.header-inner{
+    position: fixed;
+    width: 100%;
+    height: 95px;
+    
+    top: 0;
+    left: 0;
+    right: 0;
+
+    background-color: white;
+ 
+    z-index: +1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo{
+    width: 166px;
+    height: 95px;
+
+    background-color: $primary;
+    background-image: url('https://monosushi.com.ua/wp-content/uploads/2021/06/logo.svg');
+    background-size: 136px 51.09px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    cursor: pointer;
+}
+
+
+// PRODUCT
+
+.product-list{
+    width: fit-content;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    // background-color: aqua;
+}
+
+.product-items{
+    // width: 100%;
+    // height:66px;
+    list-style: none;
+    // background-color: blue;
+    display: flex;
+}
+
+.item{
+    width: 71px;
+    height: 66px;
+
+    border: 2px solid transparent;
+    
+    margin-left: 2px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.item:hover{
+    border: 2px solid $primary;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.actions-icon{
+    width: 28px;
+    height: 30px;
+    width: 100%;
+
+    margin-bottom: 4px;
+    margin-top: 4px;
+
+    // background-color: aquamarine;
+}
+
+.item p{
+    width: fit-content;
+    height: 14px;
+    font-size: 14px;
+    font-weight: bold;
+    // background-color: aquamarine;
+    margin: 0 auto;
+}
+
+// dropdown
+
+// .drop-test{
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: 40px 40px;
+//     background-image: url('https://cdn.icon-icons.com/icons2/1993/PNG/128/burger_line_list_menu_nav_navigation_option_icon_123231.png');
+
+// }
+
+
+/* Dropdown Button */
+.dropbtn {
+    width: 71px;
+    height: 66px;
+    background-color: transparent;
+    background-size: 36px 36px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('https://cdn.icon-icons.com/icons2/1993/PNG/128/burger_line_list_menu_nav_navigation_option_icon_123231.png');
+    color: $heads;
+    font-size: 16px;
+    border: none;
+    font-family: 'Balsamiq Sans'
+  }
+
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+    // border: 2px solid $primary;
+    // border-top:  none;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: white; color: black;}
+
+ 
+// /dropdown
+
+// /PRODUCT
+
+// CONTACT
+
+.contact-list{
+    width: fit-content;
+    // width: 500px;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    // background-color: aqua;
+}
+
+.btn-open-popup{
+    width: 36px;
+    height: 36px;
+    
+    cursor: pointer;
+    background-color: $primary;
+    background-image: url('https://monosushi.com.ua/wp-content/uploads/2020/10/phone.svg');
+    background-size: 12px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    margin-right: 60px;
+}
+
+.btn-open-popup:hover{
+    background-color: aliceblue;
+    border: 2px solid $primary;
+    transition: 1s;
+}
+
+.call-and-graphic{
+    width: 150px;
+    height: 39px;
+    text-align: center;
+
+    // background-color: burlywood;
+    margin-right: 10px;
+}
+
+.call-us{
+    width: 150px;
+    height: 19px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.call-phone{
+    width: 150px;
+    height: 19px;
+    font-size: 16px;
+}
+
+.graphic{
+    width: 150px;
+    height: 12px;
+
+    font-size: 12px;
+}
+
+
+.btn-open-admin{
+    width: 36px;
+    height: 36px;
+    
+    cursor: pointer;
+    background-image: url('https://monosushi.com.ua/wp-content/themes/monosushi/img/user.svg');
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+    
+}
+
+.btn-open-admin:hover{
+    border: 2px solid $primary;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+
+.header-basket{
+    width: 134px;
+    height: 95px;
+
+    padding: 66px 40px 0 45px;
+
+
+    background-color: $primary;
+    background-image: url('https://monosushi.com.ua/wp-content/themes/monosushi/img/basket.svg');
+    background-size: 38px 38px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+
+
+}
+
+.basket-price{
+    width: fit-content;
+    height: 25px;
+    // margin: 0 auto;
+    // background-color: chartreuse;
+}
+
+.basket-total-price{
+    width: fit-content;
+    height: 100%;
+
+    text-align: center;
+}
+
