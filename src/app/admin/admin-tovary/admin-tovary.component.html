@@ -1,1 +1,87 @@
-<p>admin-tovary works!</p>
+<div class="container">
+    <div class="button">
+        <button type="button" class="addButton" (click)="openFormCheck()">ДОДАТИ ТОВАР</button>
+    </div>
+
+
+    <div class="forForm" [hidden]="!openForm">
+        <form [formGroup]="productForm" (ngSubmit)="addProduct()">
+            <label for="category" class="form-label">Category:</label>
+            <select formControlName="category" class="input" id="category">
+                <option [ngValue]="category" *ngFor="let category of adminCategories">{{ category.name }}</option>
+            </select>
+            <input name="name" formControlName="name" type="text" class="input" id="name" placeholder="*ім'я">
+            <input name="path" formControlName="path" type="text" class="input" id="path" placeholder="*шлях">
+            <input name="ingredient" formControlName="ingredient" type="text" class="input" id="ingredient" placeholder="*інградієнти">
+            <div class="d-flex" style="width: fit-content;">
+                <input name="weight" formControlName="weight" type="text" class="input weight" id="weight" placeholder="*вага">
+                <input name="price" formControlName="price" type="number" class="input price" id="price" placeholder="*ціна">
+            </div>
+
+            <ng-container *ngIf="!isUploaded">
+                <input class="formFile" type="file" id="formFile" (change)="upload($event)">
+                <p>{{ uploadPercent }}</p>
+            </ng-container>
+
+            <ng-container *ngIf="isUploaded">
+                <img class="imgAdd" [src]="valueByControl('imagePath')" alt="">
+                <button type="button" class="btn-danger" (click)="deleteImage()">delete</button>
+            </ng-container>
+
+            <div class="buttons">
+                <button [disabled]="productForm.invalid" type="submit" class="addProduct">{{ editStatus ? 'ЗБЕРЕГТИ' :
+                    'ДОБАВИТИ' }}</button>
+                <button type="button" (click)="closeForm()">закрити</button>
+            </div>
+        </form>
+    </div>
+
+    <table [hidden]="openForm">
+        <thead>
+            <tr>
+                <td>
+                    #
+                </td>
+                <td>
+                    Категорія
+                </td>
+                <td>
+                    Назва
+                </td>
+                <td>
+                    Інградієнти
+                </td>
+                <td>
+                    Вага
+                </td>
+                <td>
+                    Ціна
+                </td>
+                <td>
+                    Картинка
+                </td>
+                <td>
+                    Дії
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of adminProducts">
+                <td>{{ product.id }}</td>
+                <td>{{ product.category.name }}</td>
+                <td>{{ product.name }}</td>
+                <td>{{ product.ingredient }}</td>
+                <td>{{ product.weight }}</td>
+                <td>{{ product.price }} грн.</td>
+                <td>
+                    <img [src]="product.imagePath" alt="" height="50px">
+                </td>
+                <td>
+                    <button type="button" style="width: 60%;" (click)="editProduct(product)">Реагувати</button>
+                    <button [disabled]="editStatus" type="button" style="width: 60%;"
+                        (click)="deleteProduct(product)">Видалити</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

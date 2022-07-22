@@ -27,10 +27,34 @@
   ],
   "categories": [
     {
-      "name": "піца",
-      "path": "pizza",
-      "imagePath": "https://firebasestorage.googleapis.com/v0/b/mono-ua.appspot.com/o/category%2Fpizza.svg?alt=media&token=bd5a0b86-6dbd-4a1b-9b5b-a4da3cab0955",
-      "id": 1
+      "name": "напої",
+      "path": "drinks",
+      "imagePath": "https://firebasestorage.googleapis.com/v0/b/mono-ua.appspot.com/o/category%2Fdrinks.svg?alt=media&token=740bcf08-1bc9-49c6-96c8-2bcedaffa37a",
+      "id": 2
+    },
+    {
+      "name": "роли",
+      "path": "rolls",
+      "imagePath": "https://firebasestorage.googleapis.com/v0/b/mono-ua.appspot.com/o/category%2Fdessert.svg?alt=media&token=e3682bdf-ae2d-4948-9894-2bee5f73e11c",
+      "id": 3
+    }
+  ],
+  "products": [
+    {
+      "category": {
+        "name": "роли",
+        "path": "rolls",
+        "imagePath": "https://firebasestorage.googleapis.com/v0/b/mono-ua.appspot.com/o/category%2Fdessert.svg?alt=media&token=e3682bdf-ae2d-4948-9894-2bee5f73e11c",
+        "id": 3
+      },
+      "name": "Філадельфія з лососем.",
+      "path": "filladelfiya",
+      "ingredient": "Риc, крем сир, огірок, лосось",
+      "weight": "280 г",
+      "price": 202,
+      "imagePath": "https://firebasestorage.googleapis.com/v0/b/mono-ua.appspot.com/o/products%2F1.-filadelfiya-z-lososem.jpg.pagespeed.ce.axvTz8qDqj.jpg?alt=media&token=70640714-a03a-4560-985f-7b4b0be494ac",
+      "count": 1,
+      "id": 2
     }
   ]
 }
