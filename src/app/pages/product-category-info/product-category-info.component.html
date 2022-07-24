@@ -1,1 +1,39 @@
-<p>product-category-info works!</p>
+<div class="product-info-block">
+    <ul class="bread-crumbs">
+        <li routerLink="/" class="bread-item">Головна</li>
+        <li>---></li>
+        <li [routerLink]="[ '/product-category/'+currentProduct.category.path ]" class="bread-item">{{ currentProduct.category.name | titlecase }}</li>
+        <li>---></li>
+        <li class="bread-item">Філадельфія</li>
+        <li>---></li>
+        <li class="bread-item">{{ currentProduct.name }}</li>
+    </ul>
+
+    <div class="product">
+        <div class="img">
+            <img [src]="currentProduct.imagePath" alt="">
+        </div>
+
+        <div class="text">
+            <p class="text-title">{{ currentProduct.name }}</p>
+            <div class="ing-weight">
+                <p class="ing">
+                    <span>Склад:</span>{{ currentProduct.ingredient }}
+                </p>
+                <p class="weight">
+                    <span>Вага:</span>{{ currentProduct.weight}}
+                </p>
+            </div>
+            <div class="price-count">
+                <p class="price">{{ currentProduct.price * currentProduct.count }} <span>грн</span></p>
+                <div class="counter">
+                    <button class="count-min" (click)="productCount(currentProduct, false)" [disabled]="currentProduct.count===1">-</button>
+                    <input type="text" class="count-value" [value]="currentProduct.count" readonly max="999">
+                    <button class="count-max" (click)="productCount(currentProduct, true)">+</button>
+                </div>
+                <div class="forBuy">
+                    <button class="buy" (click)="addToBasket(currentProduct)">ЗАМОВИТИ</button>
+                </div>
+        </div>
+    </div>
+</div>

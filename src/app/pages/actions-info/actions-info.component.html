@@ -1,13 +1,17 @@
 <div class="actions-info-block">
+    <ul class="bread-crumbs">
+        <li routerLink="/" class="bread-item">Головна</li>
+        <li>---></li>
+        <li [routerLink]="[ '/actions']" class="bread-item"> Акції </li>
+        <li>---></li>
+        <li class="bread-item">{{ action.name | titlecase }}</li>
+    </ul>
     <div class="actions-info">
         <div class="block-title">
-            <p>{{ action?.title }}</p>
+            <p>{{ action.title }}</p>
         </div>
         <div class="block-description">
-            <!-- <p>
-                {{ action?.description }}
-            </p> -->
-            <textarea class="block-description" readonly>{{ action?.description }}</textarea>
+            <textarea class="block-description" readonly>{{ action.description }}</textarea>
         </div>
     </div>
 </div>

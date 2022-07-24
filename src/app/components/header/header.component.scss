@@ -317,9 +317,295 @@ a{
     background-repeat: no-repeat;
     background-position: center;
 
+    cursor: pointer;
+
     display: flex;
+}
+
+.basket-info{
+    width: 50%;
+    height: fit-content;
+    position: absolute;
+    top: 95px;
+    right: 0;
+    border-radius: 10px;
+
+    background-color: white; // WHITE
+}   
+
+.element-basket{
+    width: 100%;
+    height: 95px;
+
+    border-bottom: 0.5px gray solid;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.basket-name-img{
+    width: 70%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+
+    // background-color: brown;
+}
+
+.basket-product-img{
+    width: 30%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 3%;
+}
+
+.basket-name-img img{
+    width: 90%;
+    height: 60%;
+
+    cursor: pointer;
+}
+
+.basket-product-name{
+    width: fit-content;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #252525;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 3%;
+
+    cursor: pointer;
+
+    transition: 0.4s ease;
+}
+
+.basket-product-name:hover{
+    color: $primary;
+    transition: 0.4s;   
+}
+
+.basket-product-counter-price{
+    width: 40%;
+    height: 50%;
+
+    display: flex;
+    // justify-content: space-between;
+
+}
+
+.price{
+    width: calc(100%/3);
+    height: 100%;
+
+    font-size: 18px;
+    font-weight: bolder;
+
+    padding-left: 5px;
+    
+   display: flex;
+   align-items: center;
+    
+    // border: 1px black solid;
+}
+
+.delete-icon{
+    width: 10%;
+    height: 100%;
 
 
+    display: flex;
+    align-items: center;
+    // background-color: brown;
+
+    margin-right: 4px;
+    margin-left: 6%;
+
+    cursor: pointer;
+
+}
+
+.price span{
+    margin-left: 2%;
+    font-weight: normal;
+}
+
+.counter{
+    width: calc(100%/3);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    // border: 1px black solid;
+}
+
+.count-value{
+    width: calc(100%/3);
+    height: 100%;
+
+    text-align: center;
+
+    font-size: 18px;
+
+    border: none;
+
+    outline: none;
+}
+
+.count-min{
+    width: calc(100%/3);
+    height: 80%;
+
+    font-size: 25px;
+
+    border-radius: 10px;
+    border: none;
+
+    background-color: white;
+
+    cursor: pointer;
+
+    transition: 0.4s ease;
+}
+
+.count-min:disabled{
+    color: black;
+    // background-color: red;
+    cursor: no-drop;
+}
+
+.count-min:disabled:hover{
+    background-color: red;
+}
+
+.count-min:hover{
+    background-color: $primary;
+    transition: 0.4s;
+}
+
+.count-max{
+    width: calc(100%/3);
+    height: 80%;
+
+    font-size: 25px;
+
+    border-radius: 10px;
+    border: none;
+
+    background-color: white;
+
+    cursor: pointer;
+
+    transition: 0.4s ease;
+}
+
+.count-max:hover{
+    background-color: $primary;
+    transition: 0.4s;
+}
+
+.total-block{
+    width: 100%;
+    height: 96px;
+
+    position: relative;
+
+    top: 52%;
+    
+    border-radius: 10px;
+
+    background-color: $primary;
+
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.total-price{
+    width: fit-content;
+    height: fit-content;
+
+    margin-left: 5px;
+
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.total-price span{
+    font-weight: 100;
+}
+
+.for-oform{
+    width: fit-content;
+    height: fit-content;
+
+    margin-right: 5px;
+}
+
+.oform{
+    width: 300px;
+    height: 50px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    border-radius: 10px;
+    
+    background-color: white;
+    border: 2px transparent solid;
+    outline: none;
+
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.oform:hover{
+    background-color: transparent;
+    border: 2px white solid;
+
+    transition: 0.4s;
+}
+
+.to-katalog{
+    width: 300px;
+    height: 50px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    border-radius: 10px;
+    
+    background-color: white;
+    border: 2px transparent solid;
+    outline: none;
+
+    margin: 0 auto;
+
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.to-katalog:hover{
+    background-color: transparent;
+    border: 2px white solid;
+
+    transition: 0.4s;
 }
 
 .basket-price{

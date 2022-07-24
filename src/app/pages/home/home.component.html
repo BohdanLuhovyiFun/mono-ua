@@ -33,45 +33,6 @@
         </div>
     </div>
 
-    <div class="products-container">
-        <ul class="categories-list">
-            <li class="categories-list-item">Всі</li>
-            <li class="categories-list-item"><a href="#">Філадельфія</a></li>
-            <li class="categories-list-item"><a href="#">Каліфорнія</a></li>
-            <li class="categories-list-item"><a href="#">Запечені</a></li>
-            <li class="categories-list-item"><a href="#">Фірмові</a></li>
-            <li class="categories-list-item"><a href="#">Макі</a></li>
-            <li class="categories-list-item"><a href="#">Преміум</a></li>
-        </ul>
+    <app-product-category></app-product-category>
 
-        <div class="shop-container">
-            <div class="product-item" *ngFor="let product of userProducts">
-                <div class="product-image">
-                    <div class="image-block">
-                        <img [src]="product.imagePath" alt="prod">
-                    </div>
-                </div>
-
-                <div class="product-text">
-                    <div class="product-title">{{ product.name }}</div>
-                    <div class="product-ing">
-                        <p class="ing">{{ product.ingredient }}</p>
-                        <p class="prod-weight">{{ product.weight }}</p>
-                    </div>
-                    <div class="price-count">
-                        <p class="price">{{ product.price*counter }} <span>грн</span></p>
-                        <div class="counter">
-                            <button class="count-min" (click)="countMin()" [disabled]="counter===1">-</button>
-                            <!-- <p class="count-value" [(ngModel)]="counter"> {{ counter }} </p> -->
-                            <input type="text" class="count-value" [value]="counter" readonly max="999">
-                            <button class="count-max" (click)="countMax()">+</button>
-                        </div>
-                        <div class="forBuy">
-                            <button class="buy">ЗАМОВИТИ</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>

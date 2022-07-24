@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
+import { Subscription } from 'rxjs';
 import { IProductResponse } from 'src/app/shared/interfaces/products/products.interface';
+import { OrderService } from 'src/app/shared/services/order/order.service';
 import { ProductsService } from 'src/app/shared/services/products/products.service';
 
 @Component({
@@ -8,38 +11,70 @@ import { ProductsService } from 'src/app/shared/services/products/products.servi
   styleUrls: ['./product-category.component.scss']
 })
 export class ProductCategoryComponent implements OnInit {
+
+  
   public userProducts: Array<IProductResponse> = [];
+  private eventSubscription!: Subscription;
 
   constructor(
-    private productService: ProductsService
-  ) { }
+    private productService: ProductsService,
+    private activatedRoute: ActivatedRoute,
+    private router: Router,
+    private orderService: OrderService
+  ) {
+    this.eventSubscription = this.router.events.subscribe(event => {
+      if(event instanceof NavigationEnd) {
+        this.loadProducts();
+      }
+    })
+   }
 
-  ngOnInit(): void {
-    this.getProducts()
-  }
+  ngOnInit(): void {}
 
-  getProducts(): void {
-    this.productService.getAll().subscribe(data => {
+  loadProducts(): void {
+    const categoryName = this.activatedRoute.snapshot.paramMap.get('category') as string;
+    this.productService.getAllByCategory(categoryName).subscribe(data => {
       this.userProducts = data;
-    });
+    })
+  }
+
+  ngOnDestroy(): void {
+      this.eventSubscription.unsubscribe();
+  }
+
+ 
+
+
+  productCount(product: IProductResponse, value: boolean) {
+    if(value){
+      ++product.count;
+    } else if(!value && product.count > 1){
+      --product.count;
+    }
   }
 
 
-  public counter = 1;
 
-  countMax(): void {
-    this.counter++
-  }
 
-  countMin(): void {
-    // if(this.counter <=1){
-    //   alert('Не можна купити менше одного товару.')
-    // }
-    // else{
-    //   this.counter=this.counter-1
-    // }
-    this.counter=this.counter-1
+
+  addToBasket(product: IProductResponse): void {
+    let basket: Array<IProductResponse> = [];
+    if(localStorage.length > 0 && localStorage.getItem('basket')){
+      basket = JSON.parse(localStorage.getItem('basket') as string);
+      if(basket.some(prod => prod.id === product.id)){
+        const index = basket.findIndex(prod => prod.id === product.id);
+        basket[index].count += product.count;
+      } else {
+        basket.push(product);
+      }
+    } else {
+      basket.push(product);
+    }
+    localStorage.setItem('basket', JSON.stringify(basket));
+    product.count = 1;
+    this.orderService.changeBasket.next(true);
   }
+  
 
 
 }

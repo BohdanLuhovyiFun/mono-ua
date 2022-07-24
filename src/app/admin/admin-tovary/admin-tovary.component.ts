@@ -107,6 +107,7 @@ export class AdminTovaryComponent implements OnInit {
     this.productForm.patchValue({
       category: product.category,
       name: product.name,
+      path: product.path,
       ingredient: product.ingredient,
       weight: product.weight,
       price: product.price,

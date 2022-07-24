@@ -18,26 +18,25 @@
             <div class="product-item" *ngFor="let product of userProducts">
                 <div class="product-image">
                     <div class="image-block">
-                        <img [src]="product.imagePath" alt="prod">
+                        <img [routerLink]="[ '/product-category/'+product.category.path, product.id ]" [src]="product.imagePath" alt="prod">
                     </div>
                 </div>
 
                 <div class="product-text">
-                    <div class="product-title">{{ product.name }}</div>
+                    <div [routerLink]="[ '/product-category/'+product.category.path, product.id ]" class="product-title">{{ product.name }}</div>
                     <div class="product-ing">
                         <p class="ing">{{ product.ingredient }}</p>
                         <p class="prod-weight">{{ product.weight }}</p>
                     </div>
                     <div class="price-count">
-                        <p class="price">{{ product.price*counter }} <span>грн</span></p>
+                        <p class="price">{{ product.price * product.count }} <span>грн</span></p>
                         <div class="counter">
-                            <button class="count-min" (click)="countMin()" [disabled]="counter===1">-</button>
-                            <!-- <p class="count-value" [(ngModel)]="counter"> {{ counter }} </p> -->
-                            <input type="text" class="count-value" [value]="counter" readonly max="999">
-                            <button class="count-max" (click)="countMax()">+</button>
+                            <button class="count-min" (click)="productCount(product, false)" [disabled]="product.count===1">-</button>
+                            <input type="text" class="count-value" [value]="product.count" readonly max="999">
+                            <button class="count-max" (click)="productCount(product, true)">+</button>
                         </div>
                         <div class="forBuy">
-                            <button class="buy">ЗАМОВИТИ</button>
+                            <button class="buy" (click)="addToBasket(product)">ЗАМОВИТИ</button>
                         </div>
                     </div>
                 </div>

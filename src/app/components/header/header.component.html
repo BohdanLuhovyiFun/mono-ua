@@ -54,18 +54,71 @@
             </div>
             <button type="button" class="btn-open-admin" [routerLink]="[ '/admin' ]"
                 routerLinkActive="route-active"></button>
-            <div class="header-basket">
+            <div class="header-basket" (click)="openBasketInfo()">
                 <div class="basket-price">
-                    <b id="basket-total-price" class="basket-total-price">0</b>
+                    <b id="basket-total-price" class="basket-total-price">{{ total }}</b>
                     <span>грн</span>
                 </div>
             </div>
-        </div>
-        <!-- <div class="header-basket">
-            <div class="basket-price">
-                <b id="basket-total-price" class="basket-total-price">73</b>
-                <span>грн</span>
+            <div class="basket-info" [hidden]="!basketInfoStatus">
+                <!-- ELEMBASKET -->
+                <!-- <div class="element-basket">
+                    <div class="basket-name-img">
+                        <div class="basket-product-img">
+                            <img src="https://firebasestorage.googleapis.com/v0/b/mono-ua.appspot.com/o/products%2F4.-filadelfiya-z-vugr.jpg.pagespeed.ce.wmQBWJCg4-.jpg?alt=media&token=bf4968a6-7003-4bf6-a204-f715c4d74bea" alt="">
+                        </div>
+    
+                        <div class="basket-product-name" >
+                            Філадельфія з лососем і вугрем
+                        </div>
+                    </div>
+
+                    <div class="basket-product-counter-price">
+                        <div class="counter">
+                            <button class="count-min" >-</button>
+                            <input type="text" class="count-value" [value]="1" readonly max="999">
+                            <button class="count-max" >+</button>
+                        </div>
+                        <p class="price">1000 <span>грн</span></p>
+                        <div class="delete-icon">🗑️</div>
+                    </div>
+                </div> -->
+
+                <div class="element-basket" *ngFor="let basketArray of basket">
+                    <div class="basket-name-img">
+                        <div class="basket-product-img">
+                            <img [routerLink]="[ '/product-category/'+basketArray.category.path, basketArray.id ]" [src]="basketArray.imagePath" alt="">
+                        </div>
+    
+                        <div class="basket-product-name" [routerLink]="[ '/product-category/'+basketArray.category.path, basketArray.id ]">
+                            {{ basketArray.name }}
+                        </div>
+                    </div>
+
+                    <div class="basket-product-counter-price">
+                        <div class="counter">
+                            <button class="count-min"  >-</button>
+                            <input type="text" class="count-value" [value]="basketArray.count" readonly max="999">
+                            <button class="count-max" >+</button>
+                        </div>
+                        <p class="price">{{ basketArray.price * basketArray.count }} <span>грн</span></p>
+                        <div class="delete-icon" (click)="deleteBasketProduct(basketArray)">🗑️</div>
+                    </div>
+                </div>
+
+                <div class="total-block" *ngIf="basket.length > 0">
+                    <div class="total-price"><span>Сума: </span>{{ total }} <span>грн</span></div>
+                    <div class="for-oform">
+                        <button type="button" class="oform">ОФОРМИТИ ЗАМОВЛЕННЯ</button>
+                    </div>
+                </div>
+                <div class="total-block" *ngIf="basket.length <= 0">
+                    <button type="button" class="to-katalog" routerLink="/product-category/rolls">ДО КАТАЛОГУ</button>
+                </div>
             </div>
-        </div> -->
+        </div>
     </div>
 </header>
+
+
+<!-- (click)="productCount(basketArray, false)" [disabled]="basketArray.count===1" -->

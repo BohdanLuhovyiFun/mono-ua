@@ -37,6 +37,18 @@
       "path": "rolls",
       "imagePath": "https://firebasestorage.googleapis.com/v0/b/mono-ua.appspot.com/o/category%2Fdessert.svg?alt=media&token=e3682bdf-ae2d-4948-9894-2bee5f73e11c",
       "id": 3
+    },
+    {
+      "name": "сети",
+      "path": "sets",
+      "imagePath": "https://firebasestorage.googleapis.com/v0/b/mono-ua.appspot.com/o/category%2Fdrinks.svg?alt=media&token=2f4c0480-b660-4c77-8c93-c177b02accab",
+      "id": 4
+    },
+    {
+      "name": "Соуси",
+      "path": "souses",
+      "imagePath": "https://firebasestorage.googleapis.com/v0/b/mono-ua.appspot.com/o/category%2Fdrinks.svg?alt=media&token=0dd68cb6-d6f6-4a89-87c2-faf84f65a09a",
+      "id": 5
     }
   ],
   "products": [
@@ -47,7 +59,7 @@
         "imagePath": "https://firebasestorage.googleapis.com/v0/b/mono-ua.appspot.com/o/category%2Fdessert.svg?alt=media&token=e3682bdf-ae2d-4948-9894-2bee5f73e11c",
         "id": 3
       },
-      "name": "Філадельфія з лососем.",
+      "name": "Філадельфія з лосьом.",
       "path": "filladelfiya",
       "ingredient": "Риc, крем сир, огірок, лосось",
       "weight": "280 г",
@@ -55,6 +67,22 @@
       "imagePath": "https://firebasestorage.googleapis.com/v0/b/mono-ua.appspot.com/o/products%2F1.-filadelfiya-z-lososem.jpg.pagespeed.ce.axvTz8qDqj.jpg?alt=media&token=70640714-a03a-4560-985f-7b4b0be494ac",
       "count": 1,
       "id": 2
+    },
+    {
+      "category": {
+        "name": "роли",
+        "path": "rolls",
+        "imagePath": "https://firebasestorage.googleapis.com/v0/b/mono-ua.appspot.com/o/category%2Fdessert.svg?alt=media&token=e3682bdf-ae2d-4948-9894-2bee5f73e11c",
+        "id": 3
+      },
+      "name": "Філадельфія з вугрем.",
+      "path": "filladelfiya-z-vugrem",
+      "ingredient": "Рис, крем сир, огірок, креветка, авокадо, унагі соус",
+      "weight": "280 г",
+      "price": 300,
+      "imagePath": "https://firebasestorage.googleapis.com/v0/b/mono-ua.appspot.com/o/products%2F4.-filadelfiya-z-vugr.jpg.pagespeed.ce.wmQBWJCg4-.jpg?alt=media&token=bf4968a6-7003-4bf6-a204-f715c4d74bea",
+      "count": 1,
+      "id": 3
     }
   ]
 }

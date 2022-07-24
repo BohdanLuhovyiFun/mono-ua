@@ -12,17 +12,22 @@ export class ActionsInfoComponent implements OnInit {
 
   public action!: IActionsResponse;
 
+  
   constructor(
     private actionsService: ActionsService,
-    private activateRoute: ActivatedRoute
-    ) { }
+    private activatedRoute: ActivatedRoute
+  ) { }
 
   ngOnInit(): void {
-    this.getOneAction();
+    this.activatedRoute.data.subscribe(response => {
+      this.action = response['actionsInfo'];
+    });
   }
 
+
+
   getOneAction(): void {
-    const DISCOUNT_ID = Number(this.activateRoute.snapshot.paramMap.get('id'));
+    const DISCOUNT_ID = Number(this.activatedRoute.snapshot.paramMap.get('id'));
     this.actionsService.getOne(DISCOUNT_ID).subscribe(data => {
       this.action = data;
     })

@@ -9,6 +9,40 @@
     border: 1px transparent solid;
 }
 
+.bread-crumbs{
+    width: fit-content;
+    height: 15px;
+
+    font-size: 15px;
+
+    list-style-type: none;
+
+    color: gray;
+
+    display: flex;
+
+    margin-left: 5%;
+
+}
+
+.bread-item{
+    width: fit-content;
+    height: 100%;
+
+    cursor: pointer;
+
+    // margin-left: 10px; 
+}
+
+// .bread-item::after{
+//     content: '--->';
+// }
+
+.bread-item:last-child{
+    cursor: no-drop;
+}
+
+
 .actions-info{
     width: 60%;
     height: fit-content;

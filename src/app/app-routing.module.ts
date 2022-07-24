@@ -14,12 +14,21 @@ import { AdminActionsComponent } from './admin/admin-actions/admin-actions.compo
 import { AdminCategoryComponent } from './admin/admin-category/admin-category.component';
 import { AdminTovaryComponent } from './admin/admin-tovary/admin-tovary.component';
 import { AdminOrdersComponent } from './admin/admin-orders/admin-orders.component';
+import { ProductsService } from './shared/services/products/products.service';
+import { ActionsService } from './shared/services/actions/actions.service';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'actions', component: ActionsComponent},
-  {path: 'actions/:id', component: ActionsInfoComponent},
+  {path: 'actions/:id', component: ActionsInfoComponent,
+  resolve: {
+    actionsInfo: ActionsService
+  } },
   {path: 'product-category/:category', component: ProductCategoryComponent},
+  {path: 'product-category/:category/:id', component: ProductCategoryInfoComponent,
+  resolve: {
+    productInfo: ProductsService
+  } },
   {path: 'dostavka-ta-oplata', component: DostavkaTaOplataComponent},
   {path: 'about-us', component: AboutUsComponent},
   {path: 'admin', component: AdminComponent, children: [

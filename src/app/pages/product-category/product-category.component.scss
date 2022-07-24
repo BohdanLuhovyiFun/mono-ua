@@ -170,6 +170,13 @@
     color: #252525;
     margin-top: 2%;
     margin-bottom: 2%;
+
+    transition: 0.4s ease;
+}
+
+.product-title:hover{
+    color: $primary;
+    transition: 0.4s;
 }
 
 .product-ing{
