@@ -52,8 +52,8 @@
                     Працюємо з <b>11:00</b> до <b>23:00</b>
                 </div>
             </div>
-            <button type="button" class="btn-open-admin" [routerLink]="[ '/admin' ]"
-                routerLinkActive="route-active"></button>
+            <button *ngIf="!isLogin" type="button" class="btn-open-admin" [routerLink]="[ '/auth' ]" routerLinkActive="route-active"></button>
+            <button *ngIf="isLogin" type="button" class="btn-open-admin" [routerLink]="[ '/'+loginUrl ]" routerLinkActive="route-active"></button>
             <div class="header-basket" (click)="openBasketInfo()">
                 <div class="basket-price">
                     <b id="basket-total-price" class="basket-total-price">{{ total }}</b>
@@ -119,6 +119,3 @@
         </div>
     </div>
 </header>
-
-
-<!-- (click)="productCount(basketArray, false)" [disabled]="basketArray.count===1" -->

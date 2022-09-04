@@ -1,0 +1,40 @@
+@import '/src/app/shared/styles/variables';
+
+
+.cabinet-block{
+    width: 100%;
+    height: fit-content;
+    margin-top: 60px;
+    margin: 60 auto 5 auto;
+    border: 1px transparent solid;
+}
+
+.cabinet-head{
+    width: 12%;
+    height: 100px;
+    margin: 50px auto 20px auto;
+    color: $heads;
+    font-size: 42px;
+    line-height: 1.2em;
+    font-weight: bold;
+    border-top: 5px $primary solid;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.exit-button{
+    width: 12%;
+    height: 100px;
+    margin: 50px auto 20px auto;
+    color: $heads;
+    font-size: 42px;
+    line-height: 1.2em;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.exit-button:hover{
+    color: red;
+}

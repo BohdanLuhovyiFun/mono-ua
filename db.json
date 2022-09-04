@@ -15,14 +15,6 @@
       "description": "Розіграш проводиться в соціальній мережі – Instagram.\nЩоб стати учасником розіграшу варто зробити будь-який контент на задану тему з нашими ролами. Це може бути фото, відео, tik-tok.\nОбов’язково позначай нас на пості або сторі, щоб стати учасником марафону. ( інакше ми вас не побачимо )\nМарафон триває тиждень.\nПо закінченню марафону користувачі Instagram визначають переможця методом голосування.\nПереможець отримує Запечений сет в подарунок.\nДеталі актуального марафону уточнюйте в нашому Instagram: @monosushi.com.ua\nЦя акція не поєднується з іншими акціями.\n",
       "imagePath": "https://firebasestorage.googleapis.com/v0/b/mono-ua.appspot.com/o/images%2Ffotomarafon.jpg?alt=media&token=87f29456-19c3-4884-b4fc-48080d1c418b",
       "id": 3
-    },
-    {
-      "date": "2022-07-21T07:45:35.122Z",
-      "name": "Самовивіз",
-      "title": "Самовивіз",
-      "description": "Забирайте своє замовлення самостійно та отримуйте такі переваги:\n\nЗапечені моно макі з лососем у подарунок.\nВідсутність мінімальної суми замовлення.\nЧас очікування на замовлення до 30 хв.\nДля отримання акційного ролу у подарунок зберігається умова мінімальної суми замовлення 200 грн.\nЦя акція не поєднується з іншими акціями.",
-      "imagePath": "https://firebasestorage.googleapis.com/v0/b/mono-ua.appspot.com/o/images%2Faction-s.jpg?alt=media&token=ba2390cd-db96-4867-afd8-2f1bf9d12105",
-      "id": 4
     }
   ],
   "categories": [
@@ -59,22 +51,6 @@
         "imagePath": "https://firebasestorage.googleapis.com/v0/b/mono-ua.appspot.com/o/category%2Fdessert.svg?alt=media&token=e3682bdf-ae2d-4948-9894-2bee5f73e11c",
         "id": 3
       },
-      "name": "Філадельфія з лосьом.",
-      "path": "filladelfiya",
-      "ingredient": "Риc, крем сир, огірок, лосось",
-      "weight": "280 г",
-      "price": 202,
-      "imagePath": "https://firebasestorage.googleapis.com/v0/b/mono-ua.appspot.com/o/products%2F1.-filadelfiya-z-lososem.jpg.pagespeed.ce.axvTz8qDqj.jpg?alt=media&token=70640714-a03a-4560-985f-7b4b0be494ac",
-      "count": 1,
-      "id": 2
-    },
-    {
-      "category": {
-        "name": "роли",
-        "path": "rolls",
-        "imagePath": "https://firebasestorage.googleapis.com/v0/b/mono-ua.appspot.com/o/category%2Fdessert.svg?alt=media&token=e3682bdf-ae2d-4948-9894-2bee5f73e11c",
-        "id": 3
-      },
       "name": "Філадельфія з вугрем.",
       "path": "filladelfiya-z-vugrem",
       "ingredient": "Рис, крем сир, огірок, креветка, авокадо, унагі соус",
@@ -83,6 +59,22 @@
       "imagePath": "https://firebasestorage.googleapis.com/v0/b/mono-ua.appspot.com/o/products%2F4.-filadelfiya-z-vugr.jpg.pagespeed.ce.wmQBWJCg4-.jpg?alt=media&token=bf4968a6-7003-4bf6-a204-f715c4d74bea",
       "count": 1,
       "id": 3
+    }
+  ],
+  "auth": [
+    {
+      "id": 1,
+      "email": "admin@gmail.com",
+      "password": "qwerty123",
+      "fullName": "Petro Petriv",
+      "role": "ADMIN"
+    },
+    {
+      "id": 2,
+      "email": "user@gmail.com",
+      "password": "qwerty123",
+      "fullName": "Pavlo Pavliv",
+      "role": "USER"
     }
   ]
 }

@@ -9,7 +9,7 @@
             <button type="button" class="admin-menu-button"  [routerLink]="[ 'category' ]" routerLinkActive="admin-menu-active">Категорії</button>
             <button type="button" class="admin-menu-button"  [routerLink]="[ 'tovary' ]" routerLinkActive="admin-menu-active">Товари</button>
             <button type="button" class="admin-menu-button"  [routerLink]="[ 'orders' ]" routerLinkActive="admin-menu-active">Замовлення</button>
-            <button type="button" class="admin-menu-button exit"  [routerLink]="[ '/' ]" routerLinkActive="admin-menu-active">Вихід</button>
+            <button  (click)="logout()" type="button" class="admin-menu-button exit"  [routerLink]="[ '/' ]" routerLinkActive="admin-menu-active">Вихід</button>
         </div>
         <div class="button-table">
             <router-outlet></router-outlet>

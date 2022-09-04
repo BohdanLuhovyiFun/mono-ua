@@ -26,6 +26,8 @@ import { AdminOrdersComponent } from './admin/admin-orders/admin-orders.componen
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideStorage,getStorage } from '@angular/fire/storage';
+import { AuthorizationComponent } from './pages/authorization/authorization.component';
+import { CabinetComponent } from './pages/cabinet/cabinet.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +45,9 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     AdminActionsComponent,
     AdminCategoryComponent,
     AdminTovaryComponent,
-    AdminOrdersComponent
+    AdminOrdersComponent,
+    AuthorizationComponent,
+    CabinetComponent
   ],
   imports: [
     BrowserModule,

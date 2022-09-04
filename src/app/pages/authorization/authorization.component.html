@@ -1,0 +1,11 @@
+<div class="auth-block">
+    <form [formGroup]="authForm" (ngSubmit)="login()">
+        <label for="email" class="form-label">Email:</label>
+        <input name="email" formControlName="email" type="text" class="form-control" id="email">
+
+        <label for="password" class="form-label">Password:</label>
+        <input name="password" formControlName="password" type="password" class="form-control" id="password">
+
+        <button  [disabled]="authForm.invalid" class="form-control" type="submit">Login</button>
+    </form>
+</div>
