@@ -36,6 +36,7 @@ export class AuthorizationComponent implements OnInit {
       if(data && data.length > 0){
         const user = data[0];
         localStorage.setItem('currentUser', JSON.stringify(user));
+        this.accountService.isUserLogin$.next(true);
         if(user && user.role === ROLE.USER){
           this.router.navigate(['/cabinet']);
         } else if(user && user.role === ROLE.ADMIN){
